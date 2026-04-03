@@ -1,0 +1,137 @@
+:root {
+    --bg-top: #535353; /* Mude essa cor para combinar com sua foto */
+    --bg-bottom: #121212;
+    --spotify-green: #1DB954;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(to bottom, var(--bg-top) 0%, var(--bg-bottom) 40%);
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    width: 90%;
+    max-width: 380px;
+    padding-top: 40px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header span {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #b3b3b3;
+}
+
+.header p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.album-wrapper img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.6);
+}
+
+.track-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.track-info h1 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.track-info p {
+    color: #b3b3b3;
+    margin: 5px 0;
+}
+
+.heart-btn {
+    background: none;
+    border: none;
+    color: var(--spotify-green);
+    font-size: 24px;
+}
+
+.description-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.4;
+    border-left: 4px solid var(--spotify-green);
+}
+
+/* Barra de Progresso */
+.progress-area {
+    height: 4px;
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.progress-bar {
+    height: inherit;
+    width: 0%;
+    background: white;
+    border-radius: inherit;
+    position: relative;
+}
+
+.time-stamps {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #b3b3b3;
+    margin-top: 8px;
+}
+
+/* Controles */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.play-pause {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    border: none;
+    font-size: 24px;
+}
+
+.nav-btn, .secondary {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+}
+
+.secondary {
+    font-size: 16px;
+    color: #b3b3b3;
+}
